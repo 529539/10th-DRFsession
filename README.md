@@ -1,4 +1,4 @@
-# DRF 7팀 Chord front-end
+# DRF 7팀 CHORD front-end
 
 ### 기능
 
