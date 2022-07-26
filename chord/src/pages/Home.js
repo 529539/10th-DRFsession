@@ -204,7 +204,6 @@ function Home() {
 									</h3>
 									<HiOutlineHeart
 										size="24"
-										color="#dc143c"
 										style={{ position: "absolute", right: "15px", top: "5px" }}
 									/>
 								</div>
@@ -335,7 +334,7 @@ function Home() {
 									<h3>발라드</h3>
 									<HiOutlineHeart
 										size="24"
-										color="#dc143c"
+										color="#181A41"
 										style={{ position: "absolute", right: "20px", top: "20px" }}
 									/>
 								</div>
@@ -343,7 +342,7 @@ function Home() {
 									<h3>힙합</h3>
 									<HiOutlineHeart
 										size="24"
-										color="#dc143c"
+										color="#181A41"
 										style={{ position: "absolute", right: "20px", top: "20px" }}
 									/>
 								</div>
