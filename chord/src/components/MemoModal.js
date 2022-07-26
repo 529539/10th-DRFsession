@@ -64,7 +64,7 @@ const MemoModal = (props) => {
 		"재즈",
 		"힙합",
 	];
-	const [selected, setSelected] = useState("");
+	const [selected, setSelected] = useState("default");
 
 	const MemoSubmit = (e) => {
 		let i = 4;
