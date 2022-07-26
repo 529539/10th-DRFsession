@@ -11,15 +11,28 @@ let s1 = {
 };
 
 const Submit = styled.div`
+	margin-left: 590px;
+	margin-top: 10px;
+	width: 36px;
+	height: 36px;
+	background: #181a41;
+	color: #fff;
+	opacity: 0.5;
+	border-radius: 5px;
 	display: flex;
 	align-items: center;
 	justify-content: end;
+	margin-bottom: 10px;
 	cursor: pointer;
 	&:hover {
-		color: gray;
+		color: #181a41;
+		background: #fff;
+		opacity: 0.5;
 	}
 	&:active {
-		color: navy;
+		color: #181a41;
+		background: #fff;
+		opacity: 1;
 	}
 `;
 
@@ -43,8 +56,12 @@ const MemoModal = (props) => {
 		"OST",
 		"인디",
 		"POP",
+		"클래식",
 		"재즈",
+		"KPOP",
+		"CCM",
 		"힙합",
+		"블루스",
 	];
 	const [selected, setSelected] = useState("default");
 
@@ -79,7 +96,7 @@ const MemoModal = (props) => {
 			{open ? (
 				<section>
 					<header>
-						<h1>{dateString}</h1>
+						<h1 style={{ fontSize: "40px", color: "#181A41" }}>{dateString}</h1>
 						<button className="close" onClick={close}>
 							&times;
 						</button>
@@ -93,7 +110,7 @@ const MemoModal = (props) => {
 										height: "51px",
 										background: "#FFFFFF",
 										borderRadius: "15px",
-										marginLeft: "64px",
+										marginRight: "5px",
 										marginTop: "15px",
 										boxShadow: "0px 4px 4px 0px rgba(0, 0, 0, 0.25)",
 										display: "flex",
@@ -104,7 +121,7 @@ const MemoModal = (props) => {
 										fontSize: "20px",
 										fontWeight: "bold",
 										border: "none",
-										color: selected === "default" ? "#C3C7C7" : "black",
+										color: selected === "default" ? "#C3C7C7" : "#181A41",
 									}}
 									defaultValue={"default"}
 									onChange={(e) => setSelected(e.target.value)}
@@ -129,14 +146,14 @@ const MemoModal = (props) => {
 						<div>
 							<div style={s1}>
 								<input
-									className="name"
+									className="title"
 									style={{ fontSize: "20px", fontWeight: "bold" }}
 									placeholder="노래 제목을 입력하시오"
 									value={newTitle}
 									onChange={(e) => setNewTitle(e.target.value)}
 								/>
 								<input
-									className="name"
+									className="singer"
 									style={{ fontSize: "16px" }}
 									placeholder="가수명을 입력하시오"
 									value={newSinger}
@@ -152,7 +169,7 @@ const MemoModal = (props) => {
 						</div>
 					</main>
 					<Submit onClick={MemoSubmit}>
-						<FiCheckSquare size="35" className="close" onClick={close} />
+						<FiCheckSquare size="35" onClick={close} />
 					</Submit>
 				</section>
 			) : null}

@@ -50,6 +50,14 @@ let s4 = {
 	height: "90px",
 };
 
+let s5 = {
+	background: "#FFFAF2",
+	paddingTop: "40px",
+	paddingBottom: "40px",
+	paddingLeft: "65px",
+	height: "90px",
+};
+
 const NavBar = () => {
 	return (
 		<NavBarBlock>
@@ -78,7 +86,7 @@ const NavBar = () => {
 			<NavLink to="/heart" style={s4}>
 				<img src={Heart} alt="Heart" />
 			</NavLink>
-			<NavLink to="/play" style={s4}>
+			<NavLink to="/play" style={s5}>
 				<img src={Play} alt="Play" />
 			</NavLink>
 		</NavBarBlock>

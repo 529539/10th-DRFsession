@@ -35,7 +35,7 @@ const MyMemoContainer = () => {
 	return (
 		<>
 			{memos.map((memo) => (
-				<MemoBox key={memo.id}>
+				<MemoBox key={memo.id} className="memo-box">
 					<div style={{ display: "flex" }}>
 						<div>
 							<p style={{ marginLeft: "16px" }}>{memo.date}</p>
@@ -54,8 +54,8 @@ const MyMemoContainer = () => {
 							<h5 style={{ marginTop: "0px" }}>{memo.genre}</h5>
 							<div style={{ marginTop: "-20px" }}>
 								<p>
-									<HiOutlineHeart size="13" />
-									{memo.likes}
+									<HiOutlineHeart size="15" style={{ marginTop: "5px" }} />
+									<span style={{ marginTop: "0px" }}>{memo.likes}</span>
 								</p>
 							</div>
 						</div>
@@ -78,8 +78,14 @@ const MemoBox = styled.div`
 	background: #fffaf2;
 	position: relative;
 	margin-top: 10px;
-	margin-left: 10px;
+	margin-left: 20px;
 	position: relative;
+	&:hover {
+		box-sizing: content-box;
+		width: 300px;
+		height: 283px;
+		border: 3px solid #ff0000;
+	}
 `;
 
 const MemoMusicBox = styled.div`
@@ -90,18 +96,20 @@ const MemoMusicBox = styled.div`
 	font-weight: 400;
 	font-size: 15px;
 	line-height: 8px;
-	padding-top: 7px;
+	padding-top: 13px;
+	padding-left: 10px;
+	padding-bottom: 5px;
 `;
 
 const Remove = styled.div`
 	position: absolute;
 	bottom: 10px;
 	right: 10px;
-	color: #fffaf2;
+	color: #f4f0e8;
 	font-size: 24px;
 	cursor: pointer;
 	&:hover {
-		color: #ff6b6b;
+		color: #ff0000;
 	}
 `;
 

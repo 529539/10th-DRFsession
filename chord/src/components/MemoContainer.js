@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import React, { useState, useEffect } from "react";
 import { HiOutlineHeart } from "react-icons/hi";
+import { BiComment } from "react-icons/bi";
 import axios from "axios";
 
 const MemoContainer = () => {
@@ -58,6 +59,10 @@ const MemoContainer = () => {
 								</p>
 							</div>
 							<p style={{ marginTop: "-20px" }}>{memo.date}</p>
+							<div style={{ marginTop: "200px", marginRight: "10px" }}>
+								<HiOutlineHeart size="33" />
+								<BiComment style={{ marginLeft: "15px" }} size="30" />
+							</div>
 						</div>
 					</div>
 					<MemoMusicBox>
@@ -92,6 +97,7 @@ const MemoMusicBox = styled.div`
 	font-size: 15px;
 	line-height: 8px;
 	padding-top: 7px;
+	padding: 10px 5px 5px 10px;
 `;
 
 export default MemoContainer;

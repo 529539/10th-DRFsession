@@ -36,7 +36,7 @@ const Submit = styled.div`
 		color: gray;
 	}
 	&:active {
-		color: navy;
+		color: #181a41;
 	}
 `;
 
@@ -181,9 +181,12 @@ function MemoPage() {
 								borderRadius: "15px",
 								marginLeft: "77px",
 								position: "relative",
+								boxShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)",
 							}}
 						>
-							<h1 style={{ textAlign: "center" }}>내가 쓴 메모장</h1>
+							<h1 style={{ textAlign: "center", color: "#181A41" }}>
+								내가 쓴 메모장
+							</h1>
 							<div className="scrollbar">
 								<MyMemoContainer />
 							</div>

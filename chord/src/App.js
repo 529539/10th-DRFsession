@@ -7,6 +7,7 @@ import MemoPage from "./pages/MemoPage";
 const GlobalStyle = createGlobalStyle`
   body {
   	margin: 0;
+	font-family: 'Poppins';
   }
 `;
 
