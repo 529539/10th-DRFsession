@@ -1,6 +1,6 @@
 # DRF 7팀 CHORD front-end
 
-![캡쳐](https://user-images.githubusercontent.com/102040717/180907044-f2a83467-056b-4998-9ef3-41abf9ba452d.png)
+![캡쳐](https://user-images.githubusercontent.com/102040717/180907044-f2a83467-056b-4998-9ef3-41abf9ba452d.png){: width="800px"}
 ![영상](https://user-images.githubusercontent.com/102040717/180907974-24b9bb01-b6eb-4dce-96f2-897263b159b8.gif)
 
 ### 기능
