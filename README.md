@@ -1,5 +1,7 @@
 # DRF 7팀 CHORD front-end
 
+![캡쳐}(https://user-images.githubusercontent.com/102040717/180907044-f2a83467-056b-4998-9ef3-41abf9ba452d.png)
+
 ### 기능
 
 - 내가 쓴 메모 : 장르, 노래 제목, 가수, 메모를 Modal 창에서 작성하여 post
