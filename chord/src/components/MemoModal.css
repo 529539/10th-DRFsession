@@ -1,0 +1,87 @@
+.modal {
+	display: none;
+	z-index: 99;
+	position: absolute;
+	width: 748px;
+	height: 541px;
+	left: 691px;
+	top: 219px;
+	background: #ffffff;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	border-radius: 15px;
+}
+.modal-button {
+	cursor: pointer;
+	border: 0;
+	margin-left: 300px;
+}
+.modal > section {
+	width: 90%;
+	max-width: 748px;
+	margin: 0 auto;
+	border-radius: 0.3rem;
+	background-color: #fff;
+	animation: modal-show 0.3s;
+	overflow: hidden;
+}
+.modal > section > header {
+	position: relative;
+	padding: 16px 64px 16px 16px;
+	font-weight: 700;
+}
+.modal > section > header button {
+	position: absolute;
+	top: 15px;
+	right: 15px;
+	width: 30px;
+	font-size: 21px;
+	font-weight: 700;
+	text-align: center;
+	border: none;
+}
+.modal > section > main {
+	padding: 16px;
+}
+.name {
+	width: 287px;
+	height: 42px;
+	border-style: none;
+	background-color: #f4f0e8;
+}
+.input-content {
+	margin-top: 30px;
+	width: 640px;
+	height: 200px;
+	left: 715px;
+	top: 405px;
+	background: #f4f0e8;
+	opacity: 0.5;
+	font-size: 16px;
+}
+.modal > section > footer {
+	padding: 12px 16px;
+	text-align: right;
+}
+.modal.openModal {
+	display: flex;
+	align-items: center;
+	animation: modal-bg-show 0.3s;
+}
+@keyframes modal-show {
+	from {
+		opacity: 0;
+		margin-top: -50px;
+	}
+	to {
+		opacity: 1;
+		margin-top: 0;
+	}
+}
+@keyframes modal-bg-show {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
