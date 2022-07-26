@@ -10,24 +10,6 @@ let s1 = {
 	background: "#F4F0E8",
 };
 
-let s4 = {
-	width: "141px",
-	height: "51px",
-	background: "#FFFFFF",
-	borderRadius: "15px",
-	marginLeft: "64px",
-	marginTop: "15px",
-	boxShadow: "0px 4px 4px 0px rgba(0, 0, 0, 0.25)",
-	display: "flex",
-	justifyContent: "center",
-	alignItems: "center",
-	position: "relative",
-	textAlign: "center",
-	fontSize: "20px",
-	fontWeight: "bold",
-	border: "none",
-};
-
 const Submit = styled.div`
 	display: flex;
 	align-items: center;
@@ -106,12 +88,34 @@ const MemoModal = (props) => {
 						<div style={{ position: "relative" }}>
 							<div style={{ position: "absolute", right: "0px", top: "-15px" }}>
 								<select
-									style={s4}
+									style={{
+										width: "141px",
+										height: "51px",
+										background: "#FFFFFF",
+										borderRadius: "15px",
+										marginLeft: "64px",
+										marginTop: "15px",
+										boxShadow: "0px 4px 4px 0px rgba(0, 0, 0, 0.25)",
+										display: "flex",
+										justifyContent: "center",
+										alignItems: "center",
+										position: "relative",
+										textAlign: "center",
+										fontSize: "20px",
+										fontWeight: "bold",
+										border: "none",
+										color: selected === "default" ? "#C3C7C7" : "black",
+									}}
 									defaultValue={"default"}
 									onChange={(e) => setSelected(e.target.value)}
 									value={selected}
 								>
-									<option value={"default"} disabled>
+									<option
+										className="default"
+										style={{ color: "gray" }}
+										value={"default"}
+										disabled
+									>
 										장르
 									</option>
 									{selectList.map((item) => (

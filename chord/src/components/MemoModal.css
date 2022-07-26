@@ -15,6 +15,10 @@
 	border: 0;
 	margin-left: 300px;
 }
+.close {
+	background-color: #fff;
+	cursor: pointer;
+}
 .modal > section {
 	width: 90%;
 	max-width: 748px;
