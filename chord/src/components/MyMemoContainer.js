@@ -23,9 +23,9 @@ const MyMemoContainer = () => {
 
 	const onDelete = (id) => {
 		axios
-			.delete(`https://kj173456.pythonanywhere.com/memos/${id}`)
+			.delete(`https://kj173456.pythonanywhere.com/memos/18`)
 			.then((response) => {
-				getMemos(response.data);
+				console.log("삭제성공", response);
 			})
 			.catch((error) => {
 				console.log("삭제 실패", error);
